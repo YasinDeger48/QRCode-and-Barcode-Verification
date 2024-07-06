@@ -25,6 +25,7 @@ public class BarcodeImageDecoderTests {
         };
     }
 
+
     @Test (dataProvider = "barcodeImages")
     public void testBarcode(String path) throws IOException {
 
