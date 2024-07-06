@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.ysndgr</groupId>
+    <artifactId>QRCodeAndBarcode</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <selenium>4.22.0</selenium>
+        <barcode.decode>3.4.1</barcode.decode>
+        <testng>7.10.2</testng>
+    </properties>
+
+    <developers>
+        <developer>
+            <name>Yasin Değer</name>
+            <id>yd</id>
+            <email>yasin.deger48@gmail.com</email>
+            <roles>
+                <role>QA Engineer</role>
+            </roles>
+        </developer>
+    </developers>
+<dependencies>
+<!--        WEB SCRAPPING-->
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>${selenium}</version>
+    </dependency>
+<!--    DECODE QR-->
+    <dependency>
+        <groupId>com.google.zxing</groupId>
+        <artifactId>core</artifactId>
+        <version>${barcode.decode}</version>
+    </dependency>
+    <dependency>
+        <groupId>com.google.zxing</groupId>
+        <artifactId>javase</artifactId>
+        <version>${barcode.decode}</version>
+    </dependency>
+<!--    ASSERTION AND DATA PROVIDING-->
+    <dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>${testng}</version>
+        <scope>test</scope>
+    </dependency>
+</dependencies>
+</project>
